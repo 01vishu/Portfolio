@@ -138,3 +138,30 @@ main{
   margin-bottom: 75px;
   min-width: 259px;
 }
+article{
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  padding: 10px;
+  z-index: 1;
+}
+h2,
+h3,
+h4,h5{
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+h2{
+  font-size: var(--fs-1);
+}
+h3{
+  font-size: var(--fs-2);
+}
+h4{
+  font-size: var(--fs-4);
+}
+h5{
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
