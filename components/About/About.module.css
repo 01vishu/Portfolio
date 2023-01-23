@@ -87,7 +87,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 -15px;
+    margin: 0 -10px;
     padding: 25px 15px;
     padding-bottom: 35px;
     gap: 15px;
@@ -259,4 +259,34 @@
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
+}
+/* Tech Stack  */
+.tech_stacks{
+margin-bottom: 15px;
+}
+.tech_stacks_list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin: 0 -10px;
+    padding: 25px;
+    padding-bottom: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: initial mandatory;
+    scroll-padding-inline: 25px;
+}
+.tech_stack_item{
+    /* min-width: 50%; */
+    scroll-snap-align: start;
+}
+.tech_stack_item{
+    width: 100%;
+    filter: grayscale(1);
+    transition: var(--transition-1);
+}
+.tech_stack_item:hover{
+    filter: grayscale(0);
 }

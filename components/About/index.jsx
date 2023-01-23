@@ -9,6 +9,15 @@ import Avatar2 from "@/images/avatar-2.png";
 import Avatar3 from "@/images/avatar-3.png";
 import Avatar4 from "@/images/avatar-4.png";
 import IconQuote from "@/images/icon-quote.svg";
+import HtmlImage from "@/images/html.png";
+import CssImage from "@/images/css.png";
+import JavascriptImage from "@/images/javascipt.png";
+import ReactImage from "@/images/react.png";
+import NodeImage from "@/images/node.png";
+import ExpressImage from "@/images/express.png";
+import MongodbImage from "@/images/monogdb.png";
+import NextImage from "@/images/next.png";
+import FigmaImage from "@/images/figma.png";
 import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
 const About = () => {
@@ -263,6 +272,62 @@ const About = () => {
           </div>
         </section>
       </div>
+      {/* Tech stack Section */}
+      <section className={style.tech_stacks}>
+        <h3 className={style.tech_stack_title}>Tech Stacks</h3>
+        <ul className={`${style.tech_stacks_list} ${style.has_scrollbar}`}>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={HtmlImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={CssImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image
+                src={JavascriptImage}
+                alt="html"
+                width={60}
+                height="auto"
+              />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={ReactImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={NodeImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={ExpressImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={MongodbImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={NextImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+          <li className={style.tech_stack_item}>
+            <a>
+              <Image src={FigmaImage} alt="html" width={60} height="auto" />
+            </a>
+          </li>
+        </ul>
+      </section>
     </article>
   );
 };
