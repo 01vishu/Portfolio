@@ -19,15 +19,17 @@ const About = () => {
           design complex problems
         </p>
         <p>
-          It's my job to create a website that's functional, user-friendly, and
-          attractive at the same time.Also, I add a personal touch to your
-          product, making it eye-catching and easy-to-use.And By using creative
-          techniques, I aim to convey your message and identity.
+          It&apos;s my job to create a website that&apos;s functional,
+          user-friendly, and attractive at the same time.Also, I add a personal
+          touch to your product, making it eye-catching and easy-to-use.And By
+          using creative techniques, I aim to convey your message and identity.
         </p>
       </section>
       {/* Services */}
       <section className={style.service}>
-        <h3 className={`${style.service_title} ${style.h3}`}>It's what I do</h3>
+        <h3 className={`${style.service_title} ${style.h3}`}>
+          It&apos;s what I do
+        </h3>
         {/* Service List */}
         <ul className={style.service_list}>
           {/* Design */}
