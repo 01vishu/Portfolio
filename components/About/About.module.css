@@ -287,7 +287,12 @@ margin-bottom: 15px;
     width: 100%;
     filter: grayscale(1);
     transition: var(--transition-1);
+    
+    
 }
 .tech_stack_item:hover{
     filter: grayscale(0);
+}
+.tech_stack_item a img{
+    pointer-events: none;
 }

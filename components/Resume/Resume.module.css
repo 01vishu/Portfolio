@@ -101,3 +101,51 @@
     font-weight: var(--fw-300);
     line-height: 1.6;
 }
+/* Skills */
+.content_card{
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 15px;
+    padding-top: 45px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
+.content_card::before{
+    content: '';
+    inset: 1px;
+    position: absolute;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.skills_title{
+    margin-bottom: 20px;
+}
+.skills_list{
+    padding: 20px;
+}
+.skills_item:not(:last-child){margin-bottom: 15px;}
+.title_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+.skills .title_wrapper data{
+    color: var(--light-gray);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-300);
+}
+.skill_progress_bg{
+    background: var(--jet);
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+}
+.skill_progress_fill{
+    background: var(--text-gradient-yellow);
+    height: 100%;
+    border-radius: inherit;
+}

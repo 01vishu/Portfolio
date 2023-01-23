@@ -58,13 +58,103 @@ const Resume = () => {
         <ol className={style.timeline_list}>
           <li className={style.timeline_item}>
             <h4 className={style.timeline_item_title}>Freelance</h4>
-            <span className={style.timeline_activity}>Present</span>
+            <span className={style.timeline_activity}>2022 - Present</span>
             <p className={style.timeline_text}>
               Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
               delenit atque corrupti, quos dolores et quas molestias exceptur.
             </p>
           </li>
         </ol>
+      </section>
+      {/* Skills */}
+      <section className={style.skills}>
+        <h3 className={style.skills_title}>My Skills</h3>
+        <ul className={`${style.skills_list} ${style.content_card}`}>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>Web design</h5>
+              <data value={80}>80%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "80%" }}
+              />
+            </div>
+          </li>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>Javascript</h5>
+              <data value={85}>85%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "85%" }}
+              />
+            </div>
+          </li>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>Mongo DB</h5>
+              <data value={60}>60%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "60%" }}
+              />
+            </div>
+          </li>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>React</h5>
+              <data value={80}>80%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "80%" }}
+              />
+            </div>
+          </li>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>Express</h5>
+              <data value={70}>70%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "70%" }}
+              />
+            </div>
+          </li>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>Figma</h5>
+              <data value={65}>65%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "65%" }}
+              />
+            </div>
+          </li>
+          <li className={style.skills_item}>
+            <div className={style.title_wrapper}>
+              <h5>Video Editing</h5>
+              <data value={75}>75%</data>
+            </div>
+            <div className={style.skill_progress_bg}>
+              <div
+                className={style.skill_progress_fill}
+                style={{ width: "75%" }}
+              />
+            </div>
+          </li>
+        </ul>
       </section>
     </article>
   );
