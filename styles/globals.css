@@ -132,7 +132,9 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 main{
   margin: 13px 12px;
   margin-bottom: 75px;

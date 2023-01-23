@@ -1,0 +1,103 @@
+.resume{
+    padding: 15px;
+}
+.resume.active{
+    display: block;
+    animation: fade 0.5s ease backwards;
+
+}
+@keyframes fade{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+.article_title{
+    position: relative;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+}
+.article_title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+}
+.icon_box{
+    position: relative;
+    background: var(--border-gradient-onyx);
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--orange-yellow-crayola);
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
+.icon_box::before{
+    content: "";
+    inset: 1px;
+    position: absolute;
+    background: var(--eerie-black-1);
+    border-radius: inherit;
+    z-index: -1;
+}
+.timeline{
+    margin-bottom: 30px;
+}
+.timeline .title_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.timeline_list{
+    font-size: var(--fs-6);
+    margin-left: 45px;
+}
+.timeline_item{
+    position: relative;
+}
+.timeline_item_title{
+    font-size: var(--fs-6);
+    line-height: 1.3;
+    margin-bottom: 7px;
+}
+.timeline_item:not(:last-child){
+    margin-bottom: 20px;
+}
+.timeline_activity {
+    font-weight: var(--fw-400);
+    color: var(--vegas-gold);
+    line-height: 1.6;
+}
+.timeline_item:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: var(--jet);
+}
+.timeline_item::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -32px;
+    width: 6px;
+    height: 6px;
+    background: var(--text-gradient-yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--jet);
+}
+.timeline_text{
+    color: var(--light-gray);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
