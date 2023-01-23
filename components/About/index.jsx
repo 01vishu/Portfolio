@@ -4,6 +4,10 @@ import DesignImage from "@/images/icon-design.svg";
 import DevImage from "@/images/icon-dev.svg";
 import MobileImage from "@/images/icon-app.svg";
 import PhotoImage from "@/images/icon-photo.svg";
+import Avatar1 from "@/images/avatar-1.png";
+import Avatar2 from "@/images/avatar-2.png";
+import Avatar3 from "@/images/avatar-3.png";
+import Avatar4 from "@/images/avatar-4.png";
 const About = () => {
   return (
     <article className={`${style.about} ${style.active}`}>
@@ -109,6 +113,106 @@ const About = () => {
                 of video.
               </p>
             </div>
+          </li>
+        </ul>
+      </section>
+      {/* Testimonial */}
+      <section className={style.testimonials}>
+        <h3 className={style.testimonials_title}>Testimonials</h3>
+        <ul className={`${style.testimonials_list} ${style.has_scrollbar}`}>
+          <li className={style.testimonials_item}>
+            <a href="#" className={style.content_card}>
+              <figure className={style.testimonials_avatar_box}>
+                <Image
+                  src={Avatar1}
+                  width={60}
+                  height="auto"
+                  alt="Daniel lewis"
+                />
+              </figure>
+              <h4 className={style.testimonials_item_title}>Daniel lewis</h4>
+              <div className={style.testimonials_text}>
+                <p>
+                  Vishu was hired to create a corporate identity. We were very
+                  pleased with the work done. He has a lot of experience and is
+                  very concerned about the needs of client. Lorem ipsum dolor
+                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
+                  do et eiusmod tempor incididunt ut laborels dolore magnarels
+                  alia.
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li className={style.testimonials_item}>
+            <a href="#" className={style.content_card}>
+              <figure className={style.testimonials_avatar_box}>
+                <Image
+                  src={Avatar2}
+                  width={60}
+                  height="auto"
+                  alt="Jessica miller"
+                />
+              </figure>
+              <h4 className={style.testimonials_item_title}>Jessica miller</h4>
+              <div className={style.testimonials_text}>
+                <p>
+                  Vishu was hired to create a corporate identity. We were very
+                  pleased with the work done. He has a lot of experience and is
+                  very concerned about the needs of client. Lorem ipsum dolor
+                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
+                  do et eiusmod tempor incididunt ut laborels dolore magnarels
+                  alia.
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li className={style.testimonials_item}>
+            <a href="#" className={style.content_card}>
+              <figure className={style.testimonials_avatar_box}>
+                <Image
+                  src={Avatar3}
+                  width={60}
+                  height="auto"
+                  alt="Emily evans"
+                />
+              </figure>
+              <h4 className={style.testimonials_item_title}>Emily evans</h4>
+              <div className={style.testimonials_text}>
+                <p>
+                  Vishu was hired to create a corporate identity. We were very
+                  pleased with the work done. He has a lot of experience and is
+                  very concerned about the needs of client. Lorem ipsum dolor
+                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
+                  do et eiusmod tempor incididunt ut laborels dolore magnarels
+                  alia.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li className={style.testimonials_item}>
+            <a href="#" className={style.content_card}>
+              <figure className={style.testimonials_avatar_box}>
+                <Image
+                  src={Avatar4}
+                  width={60}
+                  height="auto"
+                  alt="Henry william"
+                />
+              </figure>
+              <h4 className={style.testimonials_item_title}>Henry william</h4>
+              <div className={style.testimonials_text}>
+                <p>
+                  Vishu was hired to create a corporate identity. We were very
+                  pleased with the work done. He has a lot of experience and is
+                  very concerned about the needs of client. Lorem ipsum dolor
+                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
+                  do et eiusmod tempor incididunt ut laborels dolore magnarels
+                  alia.
+                </p>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
