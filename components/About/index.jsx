@@ -8,7 +8,11 @@ import Avatar1 from "@/images/avatar-1.png";
 import Avatar2 from "@/images/avatar-2.png";
 import Avatar3 from "@/images/avatar-3.png";
 import Avatar4 from "@/images/avatar-4.png";
+import IconQuote from "@/images/icon-quote.svg";
+import { IoCloseOutline } from "react-icons/io5";
+import { useState } from "react";
 const About = () => {
+  const [open, setOpen] = useState(false);
   return (
     <article className={`${style.about} ${style.active}`}>
       <header>
@@ -121,7 +125,12 @@ const About = () => {
         <h3 className={style.testimonials_title}>Testimonials</h3>
         <ul className={`${style.testimonials_list} ${style.has_scrollbar}`}>
           <li className={style.testimonials_item}>
-            <a href="#" className={style.content_card}>
+            <a
+              className={style.content_card}
+              onClick={() => {
+                setOpen(true);
+              }}
+            >
               <figure className={style.testimonials_avatar_box}>
                 <Image
                   src={Avatar1}
@@ -145,7 +154,7 @@ const About = () => {
           </li>
 
           <li className={style.testimonials_item}>
-            <a href="#" className={style.content_card}>
+            <a className={style.content_card}>
               <figure className={style.testimonials_avatar_box}>
                 <Image
                   src={Avatar2}
@@ -169,7 +178,7 @@ const About = () => {
           </li>
 
           <li className={style.testimonials_item}>
-            <a href="#" className={style.content_card}>
+            <a className={style.content_card}>
               <figure className={style.testimonials_avatar_box}>
                 <Image
                   src={Avatar3}
@@ -192,7 +201,7 @@ const About = () => {
             </a>
           </li>
           <li className={style.testimonials_item}>
-            <a href="#" className={style.content_card}>
+            <a className={style.content_card}>
               <figure className={style.testimonials_avatar_box}>
                 <Image
                   src={Avatar4}
@@ -216,6 +225,44 @@ const About = () => {
           </li>
         </ul>
       </section>
+      {/* Testimonial Modal */}
+      <div
+        className={`${style.modal_container} ${`${open ? style.active : ""}`}`}
+      >
+        <div
+          className={`${style.overlay} ${`${open ? style.active : ""}`}`}
+          onClick={() => {
+            setOpen(false);
+          }}
+        />
+        <section className={style.testimonials_modal}>
+          <button
+            className={style.modal_close_btn}
+            onClick={() => setOpen(false)}
+          >
+            <IoCloseOutline />
+          </button>
+          <div className={style.modal_img_wrapper}>
+            <figure className={style.modal_avatar_box}>
+              <Image src={Avatar1} width={80} height="auto" alt="" />
+            </figure>
+            <Image src={IconQuote} alt="" width={"auto"} height="auto" />
+          </div>
+          <div className={style.modal_content}>
+            <h4 className={style.modal_title}>Daniel lewis</h4>
+            <time dateTime="2022-06-14">14 June, 2022</time>
+            <div>
+              <p>
+                Vishu was hired to create a corporate identity. We were very
+                pleased with the work done. He has a lot of experience and is
+                very concerned about the needs of client. Lorem ipsum dolor sit
+                amet, ullamcous cididt consectetur adipiscing elit, seds do et
+                eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </article>
   );
 };
