@@ -38,16 +38,14 @@ const Portfolio = () => {
         {/* Filter Box */}
         <div className={style.filter_select_box}>
           <button
-            className={`${style.filter_select} ${openFilter && style.active}`}
+            className={`${style.filter_select} ${
+              openFilter ? style.active : ""
+            }`}
+            onClick={() => {
+              setOpenFilter(!openFilter);
+            }}
           >
-            <div
-              className={style.select_value}
-              onClick={() => {
-                setOpenFilter(!openFilter);
-              }}
-            >
-              Select Category
-            </div>
+            <div className={style.select_value}>Select Category</div>
             <div className={style.select_icon}>
               <IoChevronDownOutline />
             </div>
