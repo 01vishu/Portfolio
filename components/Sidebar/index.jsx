@@ -106,19 +106,25 @@ const Sidebar = () => {
           </li>
           {/* Twitter */}
           <li className={style.social_item}>
-            <a href="#" className={style.social_link}>
+            <a
+              href="https://twitter.com/rocodigital"
+              className={style.social_link}
+            >
               <IoLogoTwitter />
             </a>
           </li>
           {/* Instagram */}
           <li className={style.social_item}>
-            <a href="#" className={style.social_link}>
+            <a
+              href="https://www.instagram.com/01vishuverma"
+              className={style.social_link}
+            >
               <IoLogoInstagram />
             </a>
           </li>
           {/* Github */}
           <li className={style.social_item}>
-            <a href="#" className={style.social_link}>
+            <a href="https://github.com/01vishu" className={style.social_link}>
               <IoLogoGithub />
             </a>
           </li>
