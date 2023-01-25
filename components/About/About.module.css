@@ -296,3 +296,9 @@ margin-bottom: 15px;
 .tech_stack_item a img{
     pointer-events: none;
 }
+/* Responsive more than 450px */
+@media (min-width:450px){
+    .tech_stack_item{
+        min-width: calc(20% - 10px);
+    }
+}

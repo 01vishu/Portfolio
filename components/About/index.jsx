@@ -31,9 +31,9 @@ const About = () => {
       <section className={style.article_text}>
         <p>
           My main area of expertise is in web development and mobile
-          applications, and I am a Creative Director and UI/UX Designer from
-          Delhi, India.It is my passion to simplify, style, and intuitively
-          design complex problems
+          applications, and I am a Creative MERN Stack Developer from Delhi,
+          India.It is my passion to simplify, style, and intuitively design
+          complex problems
         </p>
         <p>
           It&apos;s my job to create a website that&apos;s functional,
